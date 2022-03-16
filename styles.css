@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Outfit:wght@300;400;600&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+
+.back-image{
+    background: url(./images/bg-mobile.png) no-repeat center/cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+.container{
+    margin: 20px;
+    /* height: 100vh; */
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+}
+.top {
+    padding-bottom: 30px;
+}
+
+.firstpad{
+    padding: 30px;
+    background-color: var(--Dark-Blue);
+    border-radius: 0.5rem 70px 0.5rem 0.5rem;
+    height: 200px;
+    width: 450px;
+}
+
+.firstpad-column{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    
+
+}
+
+.document{
+    padding: 10px;
+    background-color: var(--Very-Dark-Blue);
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 0.5rem;
+}
+
+
+.folder{
+    padding: 10px;
+    background-color: var(--Very-Dark-Blue);
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 0.5rem;
+}
+
+.upload{
+    padding: 10px;
+    background-color: var(--Very-Dark-Blue);
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 0.5rem;
+}
+
+
+.secondpad{
+    padding: 30px;
+    background-color: var(--Dark-Blue);
+    width: 450px;
+    height: 200px;
+    position: relative;
+    justify-content: center;
+    border-radius: 0.5rem;
+   
+}
+
+.secondpad > .text > p {
+    color: var(--Pale-Blue);
+    justify-content: center;
+    font-family: "Raleway";
+    justify-self: center;
+    margin-left: 30px;
+   
+}
+.text{
+    justify-content: center;
+}
+
+.subpar >ul > li{
+    list-style-type: none;
+    color: var(--Pale-Blue);
+
+}
+.subpar > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    background-color: var(--Very-Dark-Blue);
+    width: 90%;
+    margin-top: 5%;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+
+.bar .insidebar{
+    border-radius: 20px;
+    width: 81.5%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bar .insidebar .whiteball {
+    height: 10px;
+    background-color: white;
+    width: 4%;
+    border-radius: 10px;
+}
+
+.topp{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    width: 160px;
+    position: absolute;
+    justify-self: center;
+    border-radius: 0.5rem;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 25%;
+}
+
+.topp > p {
+    align-items: center;
+    padding-top: 8px;
+    color: var(--Pale-Blue);
+    margin-left: 5px;
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+     }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+
+ @media only screen and (min-width: 750px) {
+    body {
+        background-image: url(./images/bg-desktop.png);
+        background-position-y:  bottom;
+        background-color: var(--Dark-Blue);
+        background-repeat: repeat-x;
+       
+
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .topp {
+        margin-top: -35%;
+        margin-left: 50%;
+        height: 80px;
+    }
+    
+ }
